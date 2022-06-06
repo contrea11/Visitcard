@@ -1,0 +1,119 @@
+@font-face {
+    src: url('../fonts/Romana.ttf');
+    font-family: "Romana";
+}
+@font-face {
+    src: url('../fonts/Montserrat.ttf');
+    font-family: "Mont";
+}
+body {
+    margin: 0;
+    font-family: "Mont", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+.header {
+    padding: 40px;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    flex: 0;
+}
+.upper-link {
+    margin: 0 30px;
+}
+.link {
+    color: seagreen;
+    transition: color .2s;
+  }
+  
+  .link:hover {
+    color: slategrey;
+  }
+.main {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 40px;
+}
+.aside {
+    width: 400px;
+    flex: 0;
+  }
+  
+.m-section {
+    flex-grow: 1;
+    padding-left: 100px;
+}
+
+.photo-wrap {
+   
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgb(121, 2, 2),gainsboro);
+    padding: 40px;
+    filter: saturate(75%);
+    border-radius: 20px;
+    width: max-content;
+}
+.photo {
+    border: 2px solid gray;
+    border-radius: 20px;  
+}
+.name {
+    color:darkslategray;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 3em;
+}
+
+p, ul {
+   
+    line-height: 1.7;
+}
+
+.front {
+    font-family: "Romana", Helvetica, Arial, sans-serif;
+}
+
+.subtitle {
+    font-family: 'Caveat';
+    font-size: 2em;
+    border-left: 3px solid darkslategrey;
+    padding-left: 10px;
+    color: rgb(109, 107, 107);
+    margin: 0 0 30px 0;
+    border-radius: 5px;
+  }
+
+.hobby {
+
+      padding: 10px;
+      filter: saturate(75%);
+      border-radius: 20px;
+      background: linear-gradient(90deg, rgb(235, 234, 234),gainsboro); 
+    }
+  .item {
+      margin: 0;
+      list-style-type: none;
+  }
+  .item::before {
+    content: '✦';
+    color:darkslategrey;
+  }
+  .contacts-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .contacts-icon {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+  }
